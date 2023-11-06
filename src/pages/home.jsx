@@ -67,7 +67,7 @@ export function Home() {
                 Crypto Expo Dubai  2023.
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                December 28, 2023 at 6:30 PM. Place - Dubai, ATLANTIS, THE PALM
+                Date: December 28, 2023 at 6:30 PM. Place - Dubai, ATLANTIS, THE PALM
               </Typography>
               <Countdown date={Date.now() + 500000000} renderer={renderer} />
             </div>
