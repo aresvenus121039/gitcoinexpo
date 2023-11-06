@@ -72,51 +72,17 @@ export function Navbar({ brandName, routes, action }) {
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
-            target="_blank"
+            href="signup"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
+              Register
             </Button>
           </a>
           {React.cloneElement(action, {
             className: "hidden lg:inline-block",
           })}
         </div>
-        <IconButton
-          variant="text"
-          size="sm"
-          color="white"
-          className="ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-          ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-          )}
-        </IconButton>
       </div>
-      <MobileNav
-        className="rounded-xl bg-white px-4 pt-2 pb-4 text-blue-gray-900"
-        open={openNav}
-      >
-        <div className="container mx-auto">
-          {navList}
-          <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
-            target="_blank"
-            className="mb-2 block"
-          >
-            <Button variant="text" size="sm" fullWidth>
-              pro version
-            </Button>
-          </a>
-          {React.cloneElement(action, {
-            className: "w-full block",
-          })}
-        </div>
-      </MobileNav>
     </MTNavbar>
   );
 }
@@ -125,11 +91,11 @@ Navbar.defaultProps = {
   brandName: "GitCoinExpo",
   action: (
     <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
+      href="#"
+      className="animate-bounce"
     >
-      <Button variant="gradient" size="sm" fullWidth>
-        free download
+      <Button className="animate-bounce" variant="gradient" size="sm" fullWidth>
+        BUY TICKET
       </Button>
     </a>
   ),
