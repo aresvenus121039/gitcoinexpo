@@ -91,22 +91,21 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
-              </div>
+              </div> */}
               <Typography
-                variant="h1"
-                className="mb-3 origintech font-bold"
+                className="mb-3 origintech text-5xl"
                 color="blue-gray"
               >
-                Who We Are
+                About Event
               </Typography>
               <br />
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Crypto Expo Dubai is organized by Hqmena.
-                Witness the largest Crypto Expo in Dubai with top-notch investors and leaders in the cryptocurrency industry to network and discover new business possibilities.
-                Don't pass up the chance to network with the best cryptocurrency businesses for trading and investing.
-                Learn about the cryptocurrency industry, Altcoins, Blockchain, and Consensus. We are highly proficient in organizing a business-to-business event by providing the cryptocurrency industry with supreme quality educational resources and networking possibilities.
+                GitCoinExpo is a premier blockchain conference network that brings together influential figures and industry experts to reshape the future of finance.
+                The upcoming edition of GitCoinExpo is scheduled to take place in Dubai on DECEMBER 28, 2023, featuring the participation of the world's leading crypto companies and blockchain entrepreneurs.
+                As Dubai emerges as a global crypto hub, GitCoinExpo serves as the gathering point for the worldwide community interested in blockchain and cryptocurrency, offering engaging discussions on cutting-edge financial technologies.
+                Attendees can expect extensive networking opportunities and participation from over 40 countries, making it a truly global event.
               </Typography>
               {/* <Button variant="outlined">read more</Button> */}
             </div>
@@ -155,7 +154,7 @@ export function Home() {
                   color="blue-gray"
                   className="mb-3 font-bold"
                 >
-                  Top Notch Services
+                  Identifying the gamechanging trends in the web 3.0 ecosystem 
                 </Typography>
                 <Typography className="font-normal text-blue-gray-500">
                   The Arctic Ocean freezes every winter and much of the
@@ -165,22 +164,29 @@ export function Home() {
               </CardBody>
             </Card>
           </div>
-          <div className="mx-auto -mt-8 w-full px-4 md:w-6/12">
+          <div className="mx-auto -mt-8 w-full px-4 md:w-7/12">
             <Typography
-              variant="h1"
-              className="mb-3 origintech font-bold"
+              className="mb-3 origintech text-5xl"
               color="blue-gray"
             >
-              Why To Attend?
+              Discussion Topics
             </Typography>
             <br />
             <Typography className="mb-8 font-normal text-blue-gray-500">
-              For the people who belong to the crypto industry, be a part of our summit to deliver the industry’s rich content and updates on cryptocurrencies to explore the various cryptocurrency exchanges and the digital currency blow-up.
-              <br />
-              <br />
-              Figure out how it can revolutionize the globe and comprehend the crypto era.
+              <span className=" text-blue-400">1.</span>WHAT WEB 3.0 MEANS FOR ENTERPRISES (Fred Zhou)<br />
+              <span className=" text-blue-400">2.</span>VALUE CREATION IN THE METAVERSE (Adrian Zduńczyk)<br />
+              <span className=" text-blue-400">3.</span>THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Victoria Scholar)<br />
+              <span className=" text-blue-400">4.</span>DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Stephen Lindsay)<br />
+              <span className=" text-blue-400">5.</span>MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Daniel Antcliff)<br />
+              <span className=" text-blue-400">6.</span>BRIDGING DEFI AND CEFI (Ilyas Vali)<br />
+              <span className=" text-blue-400">7.</span>WEB 3 GAMING: THE NEW FRONTIER? (Russell Armand)<br />
+              <span className=" text-blue-400">8.</span>DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Danny Winn)<br />
+              <span className=" text-blue-400">9.</span>CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Lex Sokolin)<br />
+              <span className=" text-blue-400">10.</span>WEB 3: THE FUTURE IS HERE AND NOW (Pieter Vanhove)<br />
+              <span className=" text-blue-400">11.</span>NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Lennix Lai)<br />
+              <span className=" text-blue-400">12.</span>INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Delphine Forma)
             </Typography>
-            <Button variant="outlined flex items-center"><UsersIcon className="h-6 w-6 text-blue-white-900 inline-block mr-2" />Register Now</Button>
+            {/* <Button variant="outlined flex items-center"><UsersIcon className="h-6 w-6 text-blue-white-900 inline-block mr-2" />Register Now</Button> */}
           </div>
         </div>
       </section>
@@ -188,8 +194,7 @@ export function Home() {
         <div className="mt-32 flex flex-wrap items-center container mx-auto">
           <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
             <Typography
-              variant="h1"
-              className="mb-3 origintech font-bold"
+              className="mb-3 origintech text-5xl"
               color="blue-gray"
             >
               2023 HIGHLIGHTS
