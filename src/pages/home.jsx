@@ -14,6 +14,7 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard, SponsorCard } from "@/widgets/cards";
 import { featuresData, teamData, sponsorData } from "@/data";
 import Carousel from "react-multi-carousel";
+import Countdown from "react-countdown";
 import "react-multi-carousel/lib/styles.css";
 
 
@@ -37,6 +38,20 @@ export function Home() {
       items: 1
     }
   };
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a complete state
+      return 'Complete!';
+    } else {
+      // Render a countdown
+      return (
+        <span className=" text-white origintech text-3xl">
+          {days}<span className=" text-blue-400">Days{' '}</span>:{hours}<span className=" text-blue-400">Hours{' '}</span>:{minutes}<span className=" text-blue-400">Minutes{' '}</span>{seconds}:<span className=" text-blue-400">Seconds</span>
+        </span>
+      );
+    }
+  };
+  
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
@@ -54,6 +69,7 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
                 Date: December 28, 2023 at 6:30 PM. Place - Dubai, ATLANTIS, THE PALM
               </Typography>
+              <Countdown date={Date.now() + 500000000} renderer={renderer} />
             </div>
           </div>
         </div>
